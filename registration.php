@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-header('location:login.php');
+header('location:index.php');
 
 $con = mysqli_connect('remotemysql.com:3306','jZfcTdzic9','P1ErebOs6Q');
 
