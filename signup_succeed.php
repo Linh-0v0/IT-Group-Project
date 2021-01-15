@@ -4,6 +4,6 @@
     </head>
 <body>
     <h1>Registation Succeeds</h1>
-    <p>Redirecting to another URL</p>
+    <p>Redirecting you to the Login page</p>
 </body>
 </html>
