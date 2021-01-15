@@ -10,7 +10,7 @@ mysqli_select_db($con, 'heroku_6a1a16c55a7c7d8');
 $name = $_POST['user'];
 $pass = $_POST['password'];
 
-$s = " select * from usertable where name = '$name' && password = '$pass'";
+$s = " select * from usertable where name = '$name' ";
 
 $result = mysqli_query($con, $s);
 
