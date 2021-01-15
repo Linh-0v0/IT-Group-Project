@@ -36,6 +36,4 @@ if($message == "Registration succeeds"){
     header('location:username_taken.php');
 }
 
-}
-
 ?>
