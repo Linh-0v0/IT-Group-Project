@@ -15,15 +15,27 @@ $s = " select * from usertable where name = '$name' && password = '$pass' ";
 $result = mysqli_query($con, $s);
 
 $num = mysqli_num_rows($result);
-echo $num;
+
+$message = "";
 
 // Problem here $num == 1 and echo
 if($num == 1){
-    echo "Username already taken"; 
+    $message = "Username already taken";
+    // echo "Username already taken"; 
 }else{
     $reg = "insert into usertable(name, password) values ('$name' , '$pass')";
     mysqli_query($con, $reg);
-    echo "Registration succeeds";
+    // echo "Registration succeeds";
+    $message = "Registration succeeds";
+}
+
+// Code to send $message variable to HTML front end:
+if($message == "Registration succeeds"){
+    header('location:signup_succeed.php');
+}elseif($message="Username already taken"){
+    header('location:username_taken.php');
+}
+
 }
 
 ?>
