@@ -11,12 +11,12 @@ body{
 }
 
 .login-left{
-    background: rgba(211, 211, 211, 0.3);
+    background: rgba(255, 102, 102, 0.3);
     padding: 30px;   
 }
 
 .login-right{
-    background: #fff;
+    background: rgba(255, 255, 255, 0.658);
     padding: 30px;
 }
 

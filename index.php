@@ -42,7 +42,7 @@
     </div>
 
 		<div class="image_box">
-            <p style = "color: white">Parti<span style = "color: red">cep</span></p>
+            <p style = "color: white">Parti<span style = "color: #ff6666">cep</span></p>
         </div>
         
     </div>
