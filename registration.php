@@ -10,14 +10,16 @@ mysqli_select_db($con, 'heroku_6a1a16c55a7c7d8');
 $name = $_POST['user'];
 $pass = $_POST['password'];
 
-$s = " select * from usertable where name = '$name' ";
+$s = " select * from usertable where name = '$name' && password = '$pass' ";
 
 $result = mysqli_query($con, $s);
 
 $num = mysqli_num_rows($result);
+echo $num;
 
+// Problem here $num == 1 and echo
 if($num == 1){
-    echo "Username already taken";
+    echo "Username already taken"; 
 }else{
     $reg = "insert into usertable(name, password) values ('$name' , '$pass')";
     mysqli_query($con, $reg);
