@@ -17,7 +17,7 @@ $num = mysqli_num_rows($result);
 
 if($num == 1){
     $_SESSION["username"] = $name;
-    header('location:home.php');
+    header('location:https://nguyenvu11796.github.io/');
 }else{
     header('location:index.php');
 }
